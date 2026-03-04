@@ -1,0 +1,21 @@
+Question - https://platform.stratascratch.com/coding/10308-salaries-differences?code_type=2
+
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+db_employee.head()
+
+db_dept_rename = db_dept.rename(columns={'id':'department_id'})
+
+final_db = pd.merge(db_employee,db_dept_rename,on='department_id')
+
+#print(final_db.head(2))
+
+marketing_max_sal = final_db[final_db['department']=='marketing'] ['salary'].max()
+engineering_max_sal = final_db[final_db['department']=='engineering']['salary'].max()
+
+diff = abs(marketing_max_sal - engineering_max_sal)
+
+result = pd.DataFrame.from_dict([{"salary_difference" : diff }])
+result
