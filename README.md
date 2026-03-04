@@ -6,7 +6,9 @@ This repository contains my solutions to coding problems from platforms like:
 
 - HackerRank  
 - DataLemur  
-- GeeksforGeeks  
+- GeeksforGeeks
+- LeetCode
+- Any many more 
 
 ---
 
