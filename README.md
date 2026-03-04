@@ -8,7 +8,7 @@ This repository contains my solutions to coding problems from platforms like:
 - DataLemur  
 - GeeksforGeeks
 - LeetCode
-- Any many more 
+- Many more 
 
 ---
 
@@ -17,10 +17,16 @@ This repository contains my solutions to coding problems from platforms like:
 The purpose of this repository is to:
 
 - Improve problem-solving skills  
-- Master Data Structures & Algorithms  
+- Master Data Structures & Algorithms  and Data Science Skills
 - Prepare for coding interviews  
 - Track my learning progress  
 
 ---
 
-## 📂 Folder Structure
+## 🎯 Goal
+
+To build strong coding fundamentals and maintain a structured archive of solved problems for revision and interview preparation.
+
+---
+
+⭐ If you find this repository helpful, consider giving it a star!
