@@ -1,1 +1,10 @@
+Question - https://platform.stratascratch.com/coding/10308-salaries-differences?code_type=2
 
+Sql 
+
+SELECT 
+ABS(MAX(CASE WHEN DEPARTMENT="MARKETING" THEN SALARY END)-
+    MAX(CASE WHEN DEPARTMENT='ENGINEERING' THEN SALARY END))
+FROM db_employee AS E
+JOIN db_dept AS D
+ON E.DEPARTMENT_ID=D.ID;
