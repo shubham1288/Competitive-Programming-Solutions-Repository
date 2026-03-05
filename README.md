@@ -8,6 +8,7 @@ This repository contains my solutions to coding problems from platforms like:
 - DataLemur  
 - GeeksforGeeks
 - LeetCode
+- StrataScratch
 - Many more 
 
 ---
