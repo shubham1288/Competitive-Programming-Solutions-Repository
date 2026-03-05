@@ -1,0 +1,10 @@
+Question - https://platform.stratascratch.com/coding/10171-find-the-genre-of-the-person-with-the-most-number-of-oscar-winnings?code_type=3
+
+SELECT ni.top_genre
+FROM oscar_nominees o
+JOIN nominee_information ni
+  ON o.nominee = ni.name
+WHERE o.winner = 1
+GROUP BY o.nominee, ni.top_genre
+ORDER BY COUNT(*) DESC, o.nominee ASC
+LIMIT 1;
