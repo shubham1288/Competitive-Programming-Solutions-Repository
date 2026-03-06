@@ -1,0 +1,20 @@
+Question - https://platform.stratascratch.com/coding/10353-workers-with-the-highest-salaries?code_type=3
+
+/*
+select t.worker_title from title t
+join worker w on t.worker_ref_id = w.worker_id
+where w.salary = (select max(salary) from worker)
+*/
+
+WITH top_rank AS (
+    SELECT
+        t.worker_title,
+        DENSE_RANK() OVER (ORDER BY w.salary DESC) AS ranks
+    FROM worker AS w
+    LEFT JOIN title AS t
+        ON w.worker_id = t.worker_ref_id
+    WHERE t.worker_ref_id IS NOT NULL
+)
+
+SELECT worker_title AS bes_paid_title FROM top_rank
+WHERE ranks = 1;
